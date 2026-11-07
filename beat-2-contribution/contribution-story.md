@@ -57,8 +57,7 @@ one in the week it belongs to.
 
 **Unit 5: [one line on the tool work]**
 
-[2-4 sentences: what you built (the scout, your strategy), what broke
-or fell short, what changed because of it.]
+[I installed the issue-scout and wrote four `gh search issues` queries from my fit profile (Python first, then data projects: pandas, SQLFluff, Great Expectations), ranked by fewest comments. My first scan rejected all five picks for nobody-has-it. I opened sqlfluff#9026 and saw two linked PRs (#9027, #9035), so the rubric was right, and my strategy was the problem: "fewest comments, newest first" chose brand-new issues whose reporters had already opened PRs. I added `-linked:pr` to every query, which removed all five, but I found it also hides issues with only abandoned PRs (arrow#39149) and misses issues already fixed without a link (beam#19712, fixed by #39079), so next I want a date filter in my queries and a rubric check that the bug still reproduces on main.]
 
 **Unit 6: [one line on the tool work]**
 
